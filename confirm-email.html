@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Email confirmé - Yesunana Finance</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                         Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #F4F8FF 0%, #FFFFFF 55%, #EEF5FF 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            color: #193C76;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+        }
+
+        .card {
+            background: #FFFFFF;
+            border-radius: 24px;
+            padding: 42px 34px;
+            text-align: center;
+            box-shadow: 0 15px 45px rgba(25, 60, 118, 0.10);
+            border: 1px solid rgba(40, 109, 226, 0.08);
+        }
+
+        /* Logo */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 28px;
+        }
+
+        .logo {
+            width: 105px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Icône de confirmation */
+        .success-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 24px;
+            border-radius: 50%;
+            background: #E9F8F1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #10B981;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 28px;
+            line-height: 1.25;
+            color: #193C76;
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #64748B;
+            margin-bottom: 28px;
+        }
+
+        .instruction {
+            background: #F4F8FF;
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-bottom: 28px;
+            border: 1px solid #E3EDFC;
+        }
+
+        .instruction p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #334155;
+        }
+
+        .instruction strong {
+            color: #193C76;
+        }
+
+        .app-name {
+            color: #286DE2;
+            font-weight: 700;
+        }
+
+        .close-message {
+            font-size: 13px;
+            color: #94A3B8;
+            line-height: 1.5;
+        }
+
+        .brand {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #94A3B8;
+        }
+
+        .brand strong {
+            color: #286DE2;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 16px;
+            }
+
+            .card {
+                padding: 34px 22px;
+                border-radius: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+
+            .logo {
+                width: 95px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="card">
+
+            <!-- Logo Yesunana Finance -->
+            <div class="logo-container">
+                <img
+                    src="logo.png"
+                    alt="Yesunana Finance"
+                    class="logo"
+                >
+            </div>
+
+            <!-- Confirmation -->
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h1>Compte confirmé !</h1>
+
+            <p class="subtitle">
+                Votre adresse e-mail a été vérifiée avec succès.
+                Votre compte Yesunana Finance est maintenant activé.
+            </p>
+
+            <div class="instruction">
+                <p>
+                    Vous pouvez maintenant fermer cette page,
+                    retourner dans l'application
+                    <span class="app-name">Yesunana Finance</span>
+                    sur votre téléphone et vous connecter avec vos identifiants.
+                </p>
+            </div>
+
+
+            <p class="brand">
+                © Yesunana Finance
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
